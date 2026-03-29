@@ -1,0 +1,197 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: monospace;     
+}
+/* header */
+nav{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: #00D04C;
+    border-radius: 0 0 0 30px ;
+    height: 110px;
+    justify-content: space-around;
+}
+nav .logo img{
+    height: 200px;
+    width: 200px;
+    margin: -40px;
+}
+nav .navbar{
+    list-style: none;
+    display: flex;
+
+}
+nav .navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #CD0000;
+}
+nav ul li{
+    padding-right: 100px;
+    margin-top: 25px;
+}
+.list ul li{
+    list-style: none;
+}
+/* dropdown */
+.navbar li{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    background: #02AE41;
+    width: 150px;
+    padding-bottom: 30px;
+    list-style: none;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.navbar > li:hover .dropdown {
+     opacity: 1;
+    visibility: visible;
+     transform: translateY(0);
+}
+
+/* main */
+.section1 .part1{
+    font-family: monospace;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-left: 15%;
+    background: linear-gradient(
+        90deg,              /* left to right – change to 45deg, to bottom, etc. for different directions */
+        #ff0000, #ff7f00, #d3d302, #03de03, #0000ff, #4b0082, #8b00ff, #ff0000  /* rainbow loop */
+    );
+    background-clip: text;
+    color: transparent;                        
+    line-height: 100px;
+    margin-bottom: 0px;
+    word-spacing: -40px;
+}
+.section1 .part2{
+    display: flex;
+    margin-left: 26%;
+    margin-top: -90px;
+}
+.section1 .part2 button{
+    background-color: #00D04C;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+    padding: 0 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.section1 .part2 button:hover{
+    background-color: #04b018;
+}
+.image img{
+    width: 100%;
+    height: 500px;
+}
+/* Section 2 */
+.section2{
+    margin: 0 100px;
+}
+.section2 .cambodia p{
+    font-weight: 500;
+    color: #04b018;
+}
+.section2 .cambodia p:hover{
+    color: #037310;
+}
+.section2 .cambodia{
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .card{
+    display: flex;
+    justify-content: space-around;
+}
+.section2 .card .card1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 10px solid #04b018;
+}
+.section2 .card .card1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 260px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* footer */
+footer .foot{
+    background-color: #00D04C;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+footer .foot .choice{
+    padding-top: 80px
+}
+footer .foot .choice ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+footer .foot .choice ul li a{
+   text-decoration: none; 
+   font-family: monospace;
+    color: white;
+}
+footer .foot .choice ul li a:hover {
+   color: #CD0000;
+}
+.choice .option ul {
+    position: relative;
+}
+.choice .social ul img{
+    width: 40px;
+     margin: 10px;
+}
+.choice .social ul {
+   display: flex;
+   margin-left: -95px;
+  
+}
+.dropdown2{
+    position: absolute;
+    top: 100%;
+    background: #02AE41;
+    width: 150px;
+    padding: 20px;
+    list-style: none;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.option > li:hover .dropdown2 {
+    opacity: 1;
+    visibility: visible;
+     transform: translateY(0);
+}
+
+.copyright {
+    background-color: #02AE41;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
